@@ -40,8 +40,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/lUU7lxi" data-context="false" ><a href="//imgur.com/a/lUU7lxi"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+https://imgur.com/a/lUU7lxi.gif
 
 
 <!-- Replace this with whatever GIF tool you used! -->
