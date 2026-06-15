@@ -45,7 +45,7 @@ Here's a walkthrough of implemented required features:
 ![Walkthrough](https://i.imgur.com/0YI05EY.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
-Licecap
+I used Licecap to create this GIF
 
 ## Notes
 
