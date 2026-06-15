@@ -8,9 +8,9 @@ body{
 }
 
 
-.Header h1,
+.Header h1, 
 .Header h2,
-.Header p {
+.Header p { 
   color: blue;
 }
 
