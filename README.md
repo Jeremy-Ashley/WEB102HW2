@@ -40,7 +40,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-https://imgur.com/a/lUU7lxi.gif
+[https://imgur.com/a/lUU7lxi.gif](https://i.imgur.com/0YI05EY.gif)
+
 
 
 <!-- Replace this with whatever GIF tool you used! -->
