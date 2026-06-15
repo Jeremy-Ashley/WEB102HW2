@@ -42,7 +42,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 
-![Walkthrough](https://imgur.com/a/lUU7lxi)
+![Walkthrough](https://i.imgur.com/0YI05EY.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 Licecap
