@@ -49,3 +49,32 @@ body{
   border-radius: 8px;
   cursor: pointer;
 }
+
+.textInput {
+  position: absolute;
+  bottom: 311px;
+  left: 30%;
+  width: 400px;
+  height: 35px;
+}
+
+#inputBox {
+  background-color: black;
+}
+
+.submitAnswer {
+  background-color:black;
+  position: absolute;
+  bottom: 311px;
+  left: 51%;
+  width: 200px;
+  height: 40px;
+}
+
+#leftRight{
+  background-color: black;
+}
+
+.checkMessage{
+  color: black;
+}

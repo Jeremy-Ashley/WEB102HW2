@@ -5,6 +5,9 @@ const App = () => {
   const [count, setCount] = useState(10);
   const [currentCard, setCurrentCard] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const[guess, setGuess] = useState("");
+  const [isCorrect, setIsCorrect] = useState();
+  const [cardStatus, setCardStatus] = useState("");
 
     const Flashcards = [
     { Question: "Future conjugations", Answer: "é, ás, á, emos, án"},
@@ -41,7 +44,35 @@ const App = () => {
       return Flashcards[currentCard].Question;
     }
   }
+function submit() {
+  const answer = Flashcards[currentCard].Answer;
 
+  const normalizedGuess = guess.trim().toLowerCase();
+  const normalizedAnswer = answer.trim().toLowerCase();
+
+  if (normalizedGuess === normalizedAnswer) {
+    setIsCorrect(true);
+    setCardStatus("correct");
+  } else {
+    setIsCorrect(false);
+    setCardStatus("incorrect");
+  }
+}
+
+
+  function nextCard() {
+  if (currentCard < Flashcards.length - 1) {
+    setCurrentCard(currentCard + 1);
+    setIsFlipped(false);
+  }
+}
+
+function prevCard() {
+  if (currentCard > 0) {
+    setCurrentCard(currentCard - 1);
+    setIsFlipped(false);
+  }
+}
 
   return (
     <div className="App">
@@ -54,8 +85,35 @@ const App = () => {
           Use Flashcard
         </button>
       </div>
-      <div className="card" onClick={flipCard}>{getCardText()}
+
+      <div className="textInput">
+        <input id = "inputBox"
+          type="text"
+          placeholder = "Put your answer here!"
+          value={guess}
+          onChange={(e) => setGuess(e.target.value)}
+        />
       </div>
+      <div className="leftRightButton">
+        <button id="leftRight" onClick={prevCard} disabled={currentCard === 0}>
+          Previous
+        </button>
+
+        <button id="leftRight" onClick={nextCard} disabled={currentCard === Flashcards.length - 1}>
+          Next
+        </button>
+      </div>
+      <div className={`card ${cardStatus}`} onClick={flipCard}>
+        {getCardText()}
+      </div>
+      <button className="submitAnswer" onClick={submit}>
+          Check Answer
+      </button>
+      <div className="checkMessage">
+        {isCorrect === true && <p className="correctText">Correct!</p>}
+        {isCorrect === false && <p className="incorrectText">Incorrect</p>}
+      </div>
+
     </div>
   );
 };
